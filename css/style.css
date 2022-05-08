@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'),
+    url('../fonts/vazir.woff2') format('woff2'), 
+    url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    direction: rtl;
+    font-family: vazir;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+ 
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+section video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .navigation{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:red;
+}
+
+section .navigation li{
+    width:210px;
+    height: 130px;
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+   
+}
+
+section .navigation li img{
+    width: 200px;
+    height: 120px;
+    opacity: .8;
+}
+
+
+section .navigation li img:hover{
+    opacity: 1;
+}
